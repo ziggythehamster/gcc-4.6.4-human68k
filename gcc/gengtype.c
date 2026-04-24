@@ -3601,7 +3601,6 @@ write_field_root (outf_p f, pair_p v, type_p type, const char *name,
      own right.  */
   if (v && type == v->type)
     {
-
       newv = *v;
       newv.type = field_type;
       newv.name = ACONCAT ((v->name, ".", field_name, NULL));
